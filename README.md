@@ -50,6 +50,16 @@ To deploy this application on AWS EC2 Free Tier:
    ./deploy_to_ec2.sh
    ```
 
+### Setting Up a Free Domain Name
+Instead of using an IP address to access your application, you can set up a free domain name:
+
+1. Follow the instructions in `FREE_DOMAIN_SETUP_GUIDE.md`
+2. This guide covers:
+   - Allocating an Elastic IP address
+   - Getting a free domain from Freenom or similar services
+   - Configuring DNS settings
+   - Testing your domain
+
 For detailed deployment instructions on Byteplus ECS Ubuntu 22.04, see the deployment guide.
 
 ## License
