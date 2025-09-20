@@ -35,7 +35,22 @@ A Streamlit application that uses BytePlus API for video content moderation. The
 
 ## Deployment
 
-For deployment instructions on Byteplus ECS Ubuntu 22.04, see the deployment guide.
+### Local Deployment
+For local deployment, simply run:
+```
+streamlit run app.py
+```
+
+### AWS Deployment
+To deploy this application on AWS EC2 Free Tier:
+
+1. Follow the instructions in `AWS_DEPLOYMENT_GUIDE.md`
+2. Alternatively, use the provided deployment script on your EC2 instance:
+   ```
+   ./deploy_to_ec2.sh
+   ```
+
+For detailed deployment instructions on Byteplus ECS Ubuntu 22.04, see the deployment guide.
 
 ## License
 
