@@ -14,6 +14,10 @@ sudo apt upgrade -y
 echo "Installing system dependencies..."
 sudo apt install python3-pip python3-dev git tmux -y
 
+# Install OpenCV dependencies
+echo "Installing OpenCV dependencies..."
+sudo apt install libgl1-mesa-glx libsm6 libxext6 libxrender-dev -y
+
 # Clone the repository
 echo "Cloning the repository..."
 git clone https://github.com/pratik21it/Video_Content_Moderation_using_Seed1.6.git

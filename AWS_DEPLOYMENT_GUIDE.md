@@ -47,9 +47,10 @@ This guide will walk you through deploying the Video Content Moderation App on a
    sudo apt upgrade -y
    ```
 
-2. Install Python and pip:
+2. Install Python, pip, and OpenCV dependencies:
    ```
    sudo apt install python3-pip python3-dev -y
+   sudo apt install libgl1-mesa-glx libsm6 libxext6 libxrender-dev -y
    ```
 
 3. Install Git:
@@ -170,6 +171,15 @@ This guide will walk you through deploying the Video Content Moderation App on a
   - The security group allows traffic on port 8501
   - The app is running with the correct server address (0.0.0.0)
   - The EC2 instance is running
+- If you encounter OpenCV errors like `ImportError: libGL.so.1: cannot open shared object file: No such file or directory`:
+  - Make sure you've installed the OpenCV dependencies:
+    ```
+    sudo apt install libgl1-mesa-glx libsm6 libxext6 libxrender-dev -y
+    ```
+  - Reinstall opencv-python:
+    ```
+    pip3 install --upgrade opencv-python
+    ```
 - Check application logs:
   ```
   sudo journalctl -u streamlit
